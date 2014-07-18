@@ -19,8 +19,9 @@ lub希望可以做到：当你使用这个"润滑剂"时，你感受到了lettuc
 ```python
 python setup.py install
 ```
+将会自动安装下面这三个依赖。
 
-### 需要的依赖
+### 依赖项
 
 ```python
 lettuce
