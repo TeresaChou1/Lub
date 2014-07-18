@@ -1,6 +1,6 @@
 ### 为什么要做lub？
 
-一开始是出于对[calabash]: https://github.com/calabash "calabash"项目的热爱，后来，这种热爱化为动力。
+一开始是出于对[calabash](https://github.com/calabash "calabash")项目的热爱，后来，这种热爱化为动力。
 我决定使用python的BDD框架来驱动自动化测试项目
 当我发现lettuce之后我显得很兴奋。
 这是一个非常优秀的BDD框架，完全采用python编写。
