@@ -30,7 +30,7 @@ def run():
     os.system("lettuce "+str(os.getcwd()))
 
 def runwithreport():
-    os.system("lettuce "+str(os.getcwd())+" --with-xunit"+"  --xunit-file=testsresults.xml")
+    pass
 
 def main():
     parser = optparse.OptionParser(usage="%prog or type %prog -h (--help) for help")
@@ -42,7 +42,7 @@ def main():
     elif options.runmode=="normal":
         run()
     elif options.runmode=="report":
-        runwithreport()
+        pass
     else:
         print parser.print_help()
 
