@@ -101,15 +101,10 @@ from lettuce import *
 from selenium import webdriver
 
 @before.each_scenario
-def setup_some_scenario(scenario):
+def startupdriver(scenario):
     world.browser=webdriver.Firefox()
-
-@after.each_scenario
-def setup_some_scenario(scenario):
-    world.browser.close()
-
 ```
-terrain中，我用了几个装饰器，非常实用，他们的全部内容可以参见lettuce这里
+terrain中，我用了装饰器，非常实用，他们的全部内容可以参见lettuce这里
 [lettuce terrain](http://lettuce.it/reference/terrain.html#reference-terrain "lettuce terrain")
 
 #### step4 运行！
