@@ -51,7 +51,8 @@ support
 --terrain.py 全局控制
 ```
 
-#### step3 接下来我们先使用webtc做一个百度demo
+#### step3 接下来我们先在webtc里做一个demo
+我们拿百度首页为例，（又是百度 ：{）
 
 先编写一个简单的用例，打开all.feature进行编辑：
 
