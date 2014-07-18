@@ -1,6 +1,6 @@
 ### 为什么要做lub？
 
-一开始是出于对calabash项目的热爱，后来，这种热爱化为动力。
+一开始是出于对[calabash]: https://github.com/calabash "calabash"项目的热爱，后来，这种热爱化为动力。
 我决定使用python的BDD框架来驱动自动化测试项目
 当我发现lettuce之后我显得很兴奋。
 这是一个非常优秀的BDD框架，完全采用python编写。
@@ -39,7 +39,7 @@ lub -i gen
 完成创建后，将在当前目录生成webtc和apptc两个文件夹，分别用于放置web端和移动端的用例
 他们下面的结构是一模一样的：
 
-```python
+```
 features
 --all.feature 自然语言描述的用例集
 step_definitions
@@ -47,3 +47,5 @@ step_definitions
 support
 --terrain.py 全局控制
 ```
+
+#### step2 接下来我们先使用
