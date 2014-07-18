@@ -18,10 +18,32 @@
 python setup.py install
 ```
 
-### 依赖
+### 需要的依赖
 
 ```python
 lettuce
 appium
 selenium
+```
+
+### Quick Start
+
+#### step1 创建一个lub项目
+
+```bash
+lub -i gen
+```
+
+#### step2 熟悉一下生成的结构
+
+完成创建后，将在当前目录生成webtc和apptc两个文件夹，分别用于放置web端和移动端的用例
+他们下面的结构是一模一样的：
+
+```python
+features
+--all.feature 自然语言描述的用例集
+step_definitions
+--steps.py 步骤action
+support
+--terrain.py 全局控制
 ```
