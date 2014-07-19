@@ -87,8 +87,7 @@ def clickelem(step,typename,typekey):
 ```
 
 这里，我们使用了lub封装的一些方法。
-这里的world是lettuce提供的一个"世界"，很形象的说法，你可以在全局控制中的一开始就将我们的webdriver实例放入这个"世界"里。
-在steps中，我们只需要去拿就可以了。
+world是threading.local的一个实例，他只在当前线程保存值。
 
 我们来看看全局控制terrain.py里有什么有趣的东西：
 注：terrain是特殊的py，它将最优先运行：
@@ -116,7 +115,7 @@ terrain中，我用了装饰器，非常实用，他们的全部内容可以参�
 lub -r normal
 ```
 
-#### 扩展及其他
+#### 文档&扩展&其他
 
 待补充
 
