@@ -1,7 +1,7 @@
 from setuptools import setup
 import os
 
-required_modules = ['lettuce','selenium','Appium-Python-Client']
+required_modules = ['lettuce','selenium','Appium-Python-Client','sure','fuzzywuzzy','python-subunit']
 
 def get_packages():
     # setuptools can't do the job :(
@@ -14,7 +14,7 @@ def get_packages():
 setup(
     name='Lub',
     version='0.1.1',
-    description='Lub is based on lettuce for automation testing',
+    description='Lub is a BDD automation testing Tool based on lettuce',
     author='Archer',
     author_email='qddegtya@gmail.com',
     url='http://www.diggerplus.org',
