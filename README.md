@@ -25,6 +25,7 @@ pip install -r requirements.txt
 ```python
 python setup.py install
 ```
+注：将会自动安装lettuce
 
 ### Quick Start
 
@@ -68,7 +69,7 @@ Feature: 测试用例集
 # step definitions
 
 from Lub.webtools.actions import *
-from Lub.lettuce import *
+from lettuce import *
 
 @step(u'打开 "(.*)"')
 def openurl(step,url):
@@ -93,7 +94,7 @@ world是threading.local的一个实例，他只在当前线程保存值。
 # -*- coding:utf-8 -*-
 # controls
 
-from Lub.lettuce import *
+from lettuce import *
 from selenium import webdriver
 
 @before.each_scenario
@@ -102,6 +103,8 @@ def startupdriver(scenario):
 ```
 terrain中，我用了装饰器，非常实用，他们的全部内容可以参见lettuce这里
 [lettuce terrain](http://lettuce.it/reference/terrain.html#reference-terrain "lettuce terrain")
+
+demo和例子可以在lubdemo目录下找到。
 
 #### step4 运行！
 
