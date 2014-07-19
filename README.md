@@ -68,7 +68,7 @@ Feature: 测试用例集
 # step definitions
 
 from Lub.webtools.actions import *
-from lettuce import *
+from Lub.lettuce import *
 
 @step(u'打开 "(.*)"')
 def openurl(step,url):
@@ -93,7 +93,7 @@ world是threading.local的一个实例，他只在当前线程保存值。
 # -*- coding:utf-8 -*-
 # controls
 
-from lettuce import *
+from Lub.lettuce import *
 from selenium import webdriver
 
 @before.each_scenario
