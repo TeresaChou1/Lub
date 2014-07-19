@@ -14,19 +14,16 @@
 这些工作包括大家熟悉的封装，command管理，报告自定义，甚至是通信......等等工作。
 lub希望可以做到：当你使用这个"润滑剂"时，你感受到了lettuce的BDD魅力。
 
+### 安装依赖
+
+```python
+pip install -r requirements.txt
+```
+
 ### 安装Lub
 
 ```python
 python setup.py install
-```
-将会自动安装下面这三个依赖。
-
-### 依赖项
-
-```python
-lettuce
-appium
-selenium
 ```
 
 ### Quick Start
