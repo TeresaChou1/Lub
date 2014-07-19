@@ -1,7 +1,7 @@
 from setuptools import setup
 import os
 
-required_modules = ['selenium','Appium-Python-Client','sure','fuzzywuzzy','python-subunit']
+required_modules = ['selenium','Appium-Python-Client','sure','fuzzywuzzy','python-subunit’,’lettuce’]
 
 def get_packages():
     # setuptools can't do the job :(
