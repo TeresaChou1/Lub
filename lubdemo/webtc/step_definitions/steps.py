@@ -2,9 +2,6 @@
 # step definitions
 
 from Lub.webtools.actions import *
-from Lub.webtools import actions
-import Lub
-import imp
 from lettuce import *
 
 imp.reload(Lub)
