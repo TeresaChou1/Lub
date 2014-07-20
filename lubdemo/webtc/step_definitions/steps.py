@@ -11,7 +11,7 @@ imp.reload(Lub)
 
 @step(u'打开 "(.*)"')
 def openurl(step,url):
-    world.browser.get(url)
+    lubget(world.browser,url)
 
 @step(u'在 "(.*)" 为 "(.*)" 的框中输入 "(.*)"')
 def typekey(step,typename,typekey,typeval):
