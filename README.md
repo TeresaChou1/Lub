@@ -77,7 +77,7 @@ def openurl(step,url):
 
 @step(u'在 "(.*)" 为 "(.*)" 的框中输入 "(.*)"')
 def typekey(step,typename,typekey,typeval):
-    lubfind(world.browser,typename,typekey).send_keys(typeval)
+    lubinput(lubfind(world.browser,typename,typekey),typeval)
 
 @step(u'点击 "(.*)" 为 "(.*)" 的按钮')
 def clickelem(step,typename,typekey):
