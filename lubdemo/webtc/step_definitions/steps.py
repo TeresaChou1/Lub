@@ -4,8 +4,6 @@
 from Lub.webtools.actions import *
 from lettuce import *
 
-imp.reload(Lub)
-
 @step(u'打开 "(.*)"')
 def openurl(step,url):
     lubget(world.browser,url)
