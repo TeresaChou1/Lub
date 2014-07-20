@@ -9,7 +9,7 @@ def lubget(wbinstance,url):
     """get url"""
     if hasattr(wbinstance,'get'):
         getmethod=getattr(wbinstance,'get')
-        getmethod(url) #call
+        getmethod(url) #callback
     else:
         raise AttributeError
 
@@ -20,6 +20,13 @@ def lubclick(element):
     else:
         raise AttributeError
 
+def lubinput(element,inputwhat):
+    """input method"""
+    if hasattr(element,'send_keys'):
+        inputmethod=getattr(element,'send_keys')
+        inputmethod(inputwhat) #callback
+    else:
+        raise AttributeError
 
 def lubfind(wbinstance,typename,typeval):
     """find element"""
