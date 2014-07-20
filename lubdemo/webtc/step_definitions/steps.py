@@ -1,11 +1,13 @@
 # -*- coding:utf-8 -*-
 # step definitions
 
-# -*- coding:utf-8 -*-
-# step definitions
-
 from Lub.webtools.actions import *
+from Lub.webtools import actions
+import Lub
+import imp
 from lettuce import *
+
+imp.reload(Lub)
 
 @step(u'打开 "(.*)"')
 def openurl(step,url):
@@ -17,4 +19,4 @@ def typekey(step,typename,typekey,typeval):
 
 @step(u'点击 "(.*)" 为 "(.*)" 的按钮')
 def clickelem(step,typename,typekey):
-    lubfind(world.browser,typename,typekey).click()
+    lubclick(lubfind(world.browser,typename,typekey))
