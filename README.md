@@ -73,7 +73,7 @@ from lettuce import *
 
 @step(u'打开 "(.*)"')
 def openurl(step,url):
-    world.browser.get(url)
+    lubget(world.browser,url)
 
 @step(u'在 "(.*)" 为 "(.*)" 的框中输入 "(.*)"')
 def typekey(step,typename,typekey,typeval):
@@ -81,7 +81,7 @@ def typekey(step,typename,typekey,typeval):
 
 @step(u'点击 "(.*)" 为 "(.*)" 的按钮')
 def clickelem(step,typename,typekey):
-    lubfind(world.browser,typename,typekey).click()
+    lubclick(lubfind(world.browser,typename,typekey))
 ```
 
 这里，我们使用了lub封装的一些方法。
