@@ -16,7 +16,8 @@ def lubget(wbinstance,url):
 def lubclick(element):
     """click method"""
     if hasattr(element,'click'):
-        return getattr(element,'click')
+        clickmethod=getattr(element,'click')
+        clickmethod() #callback
     else:
         raise AttributeError
 
