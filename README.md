@@ -1,4 +1,4 @@
-### 为什么要做lub？
+__为什么要做lub？__
 
 一开始是出于对[calabash](https://github.com/calabash "calabash")项目的热爱，后来，这种热爱化为动力。
 我决定使用python的BDD框架来驱动自动化测试项目。
@@ -8,34 +8,34 @@
 所以，我在项目标题里打上了"demo"
 很显然，lub还有很多工作需要去做。
 
-### 既然有了lettuce，为什么还要Lub？
+__既然有了lettuce，为什么还要Lub？__
 
 不可否认，lettuce是一个出色的BDD框架，但是要想运用到web和app的自动化测试中去就可能需要做一系列工作。
 这些工作包括大家熟悉的封装，command管理，报告自定义，甚至是通信......等等工作。
 lub希望可以做到：当你使用这个"润滑剂"时，你感受到了lettuce的BDD魅力。
 
-### 安装依赖
+__安装依赖__
 
 ```python
 pip install -r requirements.txt
 ```
 
-### 安装Lub
+__安装Lub__
 
 ```python
 python setup.py install
 ```
 注：将会自动安装lettuce
 
-### Quick Start
+__Quick Start__
 
-#### step1 创建一个lub项目
+step1 创建一个lub项目
 
 ```bash
 lub -i gen
 ```
 
-#### step2 熟悉一下生成的结构
+step2 熟悉一下生成的结构
 
 完成创建后，将在当前目录生成webtc和apptc两个文件夹：分别用于放置web端和移动端的用例。
 他们的结构是一模一样的：
@@ -49,7 +49,8 @@ support
 --terrain.py 全局控制
 ```
 
-#### step3 接下来我们先在webtc里做一个demo
+step3 接下来我们先在webtc里做一个demo
+
 我们拿百度首页为例，（又是百度 ：{）
 
 先编写一个简单的用例，打开all.feature进行编辑：
@@ -106,7 +107,7 @@ terrain中，我用了装饰器，非常实用，他们的全部内容可以参�
 
 demo和例子可以在lubdemo目录下找到。
 
-#### step4 运行！
+step4 运行！
 
 你可以直接使用下面的命令快速运行你的用例集，注意，需要在当前结构目录下运行
 也就是在webtc目录或者apptc下运行，不然会提示找不到features目录
@@ -115,11 +116,11 @@ demo和例子可以在lubdemo目录下找到。
 lub -r normal
 ```
 
-#### 文档&扩展&其他
+__文档&扩展&其他__
 
 待补充
 
-### 感谢以下这些优秀的框架
+__感谢以下这些优秀的框架__
 
 ```
 lettuce
