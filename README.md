@@ -4,7 +4,7 @@ __为什么要做 lub？__
 我决定使用 python 的 BDD 框架来驱动自动化测试项目。
 当我发现 [lettuce](http://lettuce.it/ "lettuce") 之后我显得很兴奋。
 这是一个非常优秀的 BDD 框架，完全采用 python 编写，有了 lettuce 之后，你几乎只要做一些附加工作就可以了。
-所以 lub 就是对 lettuce 的一剂润滑剂，但是lub是没有办法称之为一个完整的自动化测试框架的，至少目前是如此。
+所以 lub 就是对 lettuce 的一剂润滑剂，但是 lub 是没有办法称之为一个完整的自动化测试框架的，至少目前是如此。
 所以，我在项目标题里打上了 "demo"
 很显然，lub 还有很多工作需要去做。
 
@@ -20,7 +20,7 @@ __安装依赖__
 pip install -r requirements.txt
 ```
 
-__安装Lub__
+__安装 Lub__
 
 ```python
 python setup.py install
